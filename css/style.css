@@ -14,6 +14,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+video#bgvid{
+  min-width:100%;
+  min-height:100%;
+  width:auto;
+  height:auto;
+  background:url(images/DSC0130.jpg) no-repeat; 
+  background-size:cover;
+
+}
+
 /**  Header Navigation **/
 
 header .navbar {
@@ -121,6 +131,12 @@ header .inbody .navbar-brand span.subhead {
   display: none;
 }
 
+.row .thumbnail {
+    border:0;
+    box-shadow:0;
+    border-radius:0;
+}
+
 /**  Carousel Fade **/
 
 .carousel.fade {
@@ -164,6 +180,14 @@ header .inbody .navbar-brand span.subhead {
   height: 100%;
 }
 
+#intro .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
 #thumbnail{
   
 }
@@ -171,7 +195,7 @@ header .inbody .navbar-brand span.subhead {
 
 /**  Page **/
 .page {
-  padding: 50px 0;
+  padding: 0px 0;
 }
 
 .page h2 {
@@ -179,11 +203,12 @@ header .inbody .navbar-brand span.subhead {
   margin-bottom: 30px;
 }
 
+
 /**  Page -- Mission **/
 #videos {
-  background-color: #E68A00;
-  background-image: linear-gradient(to bottom, #E68A00, #B36B00);
-  border-top: 20px solid rgba(238, 200, 86, .5);
+  background-color: #E60000;
+  background-image: linear-gradient(to bottom, #BC1414, #BF1414);
+  border-top: 20px solid rgb(224, 224, 224);
 }
 
 /**  Page -- Services **/

@@ -2,7 +2,7 @@ $(function() {
 
   "use strict";
 
-  var topoffset = 50; //variable for menu height
+  var topoffset = 0; //variable for menu height
   var slideqty = $('#featured .item').length;
   var wheight = $(window).height(); //get the height of the window
   var randSlide = Math.floor(Math.random()*slideqty);
@@ -36,7 +36,7 @@ $(function() {
 
   // add inbody class
   var hash = $(this).find('li.active a').attr('href');
-  if(hash !== '#featured') {
+  if(hash !== '#intro') {
     $('header nav').addClass('inbody');
   } else {
     $('header nav').removeClass('inbody');
@@ -46,7 +46,7 @@ $(function() {
   // Add an inbody class to nav when scrollspy event fires
   $('.navbar-fixed-top').on('activate.bs.scrollspy', function() {
     var hash = $(this).find('li.active a').attr('href');
-    if(hash !== '#featured') {
+    if(hash !== '#intro') {
       $('header nav').addClass('inbody');
     } else {
       $('header nav').removeClass('inbody');
