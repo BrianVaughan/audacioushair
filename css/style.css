@@ -232,10 +232,20 @@ header .inbody .navbar-brand span.subhead {
 @media only screen 
 and (min-width: 450px)
 and (max-width: 768px) {
+  #bgvid{
+    display: none;
+  }
   .service p {
     padding: 0 20%;
   }
 }
+@media only screen 
+and (min-width: 769px) {
+  #featured{
+    display: none;
+  }
+}
+
 
 /**  Page -- Staff **/
 
