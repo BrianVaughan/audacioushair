@@ -1,11 +1,36 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
-
 /**  Basic Page CSS **/
 body{
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
   font-size: 2em;
   position: relative;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background:#ffcccc;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #ff6666;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #ffcccc;
+    box-shadow: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,19 +67,19 @@ header .navbar-default .navbar-nav a {
 }
 
 header .navbar-default .navbar-nav a:hover {
-  color: #C9C9C9;
+  color: #737373;
 }
 
 header .navbar-default .navbar-nav .active a {
   font-weight: 700;
-  color: #C9C9C9;
+  color: #737373;
   background: transparent;
-  border-bottom: 4px solid #C9C9C9;
+  border-bottom: 4px solid #737373;
   text-shadow: none;
 }
 
 header .navbar-default .navbar-nav .active a:hover {
-  color: #C9C9C9;
+  color: #737373;
   background: transparent;
   text-shadow: none;
 }
@@ -69,7 +94,7 @@ header .navbar-brand {
 }
 
 header .navbar-brand h1 {
-  color: white;
+  color: #1a1a1a;
   margin: 0;
   font-size: 1.8em;
   font-weight: 400;
@@ -206,8 +231,8 @@ header .inbody .navbar-brand span.subhead {
 
 /**  Page -- Mission **/
 #videos {
-  background-color: #E60000;
-  background-image: linear-gradient(to bottom, #BC1414, #BF1414);
+  background-color: #ffcccc;
+  background-image: linear-gradient(to bottom, #ffcccc, #ffe5e5);
   border-top: 20px solid rgb(224, 224, 224);
 }
 
@@ -230,7 +255,7 @@ header .inbody .navbar-brand span.subhead {
 }
 
 @media only screen 
-and (min-width: 450px)
+and (min-width: 1px)
 and (max-width: 768px) {
   #bgvid{
     display: none;
