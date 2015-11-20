@@ -7,6 +7,16 @@ body{
   position: relative;
 }
 
+#navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+#navcontainer ul li { display: inline; }
+#navcontainer ul li a { text-decoration: none; }
+
 .btn {
     padding: 14px 24px;
     border: 0 none;
@@ -87,10 +97,10 @@ header .navbar-default .navbar-nav .active a:hover {
 /**  Navbar Brand **/
 
 header .navbar-brand {
-  background: url(../images/audacioushairbykatelynn4.svg);
+ /** background: url(../images/audacioushairbykatelynn4.svg);
   background-repeat: no-repeat;
   background-position: 15px 0;
-  height: auto;
+  height: auto;**/
 }
 
 header .navbar-brand h1 {
