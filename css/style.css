@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+@import url(http://fontDSCN0130.jpgs.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
 /**  Basic Page CSS **/
 body{
   font-family: "Roboto Slab", sans-serif;
@@ -54,7 +54,7 @@ video#bgvid{
   min-height:100%;
   width:auto;
   height:auto;
-  background:url(images/DSC0130.jpg) no-repeat; 
+  background:url(../images/DSCN0130.jpg) no-repeat; 
   background-size:cover;
 
 }

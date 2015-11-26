@@ -3,6 +3,7 @@
         <head>
           <meta charset="UTF-8">
           <title>Audacious Hair</title>
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
           <link rel="stylesheet" href="css/style.css">
           <script src="js/prefixfree.min.js"></script>
@@ -16,16 +17,45 @@
           ga('create', 'UA-69605635-1', 'auto');
           ga('send', 'pageview');
           </script>
+          <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
         </head>
         <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+        <div id="fb-root"></div>
+        <script>
+        function gaInit() {
+           $.getScript('//www.google-analytics.com/analytics.js'); // jQuery shortcut
+           window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+           ga('create', 'UA-69605635-1', 'auto');
+         
+           console.log("Initalized");
+           return ga;
+         };
+         
+         function gaTrack(path, title) {
+           var track =  { page: path, title: title};
+         
+           ga = window.ga || gaInit();
+         
+           ga('set', track);
+           ga('send', 'pageview');
+         
+           console.log("Tracked");
+         };
+
+         $("a").click(function(evt) {
+          var path = evt.currentTarget.pathname + evt.currentTarget.hash;
+          var title = evt.currentTarget.title || evt.currentTarget.text;
+          gaTrack(path, title);
+        });
+        </script>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
             <header>
                   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                     <div class="container">
@@ -82,7 +112,7 @@
         </div> <!-- featured carousel -->
 
         </header>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- audacious -->
         <ins class="adsbygoogle"
         style="display:block"
@@ -97,8 +127,6 @@
 
           <div class="page" id="HairDesigns">
             <div class="content container">
-
-
                 <div class="row">
                     <ul>
                         <li class="thumbnail col-sm-3 col-xs-6" id="thumbnail">
@@ -208,9 +236,23 @@
                         </li>
                         </ul>
                     </div>
+
+                <div class="row">   
+                     <ul>
+                        <li class="thumbnail col-sm-3 col-xs-6">
+                            <a href="#hair13" data-toggle="modal"><img class ="img-circle" src="images/DSCN0295_thumbnail.png" alt="Style 9 by Katelynn"></a>
+                            <div class="caption">
+                                <h3>Audacious Hair</h3>
+                                <p> Loose Locks</p>
+                                <p><a href="#hair13" data-toggle="modal" class="btn btn-primary" role="button">View</a></p>
+                            </div>
+                        </li>
+                     </ul>
                 </div>
+
+                
                  <div class="row">
-                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                     <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <!-- audacious -->
                     <ins class="adsbygoogle"
                     style="display:block"
@@ -221,7 +263,27 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
                 </div> 
+              </div>
             </div>
+            <div class="alignleft">  
+<script type='text/javascript'>
+ amzn_assoc_ad_type = 'banner';
+ amzn_assoc_tracking_id = 'audacaccom-20';
+ amzn_assoc_marketplace = 'amazon';
+ amzn_assoc_region = 'US';
+ amzn_assoc_placement = 'assoc_banner_placement_default';
+ amzn_assoc_linkid = 'MX4LJ3NMKHXWT6E2';
+ amzn_assoc_campaigns = 'dremelord';
+ amzn_assoc_p = '12';
+ amzn_assoc_banner_type = 'category';
+ amzn_assoc_isresponsive = 'false';
+ amzn_assoc_banner_id = '19NF12PV0VE49BPM8582';
+ amzn_assoc_width = '300';
+ amzn_assoc_height = '250';
+</script>
+<script src='//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1'></script>
+</div>
+
              <div id="hair1" class="modal fade" tabindex="-1">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -416,6 +478,23 @@
                     </div>
                 </div>
             </div>
+            <div id="hair13" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                            <h3 class="modal-title">Audacious Hair By Katelynn</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p><img class="img-rounded" src="images/DSCN0295_cut.png" alt="By Katelynn" class="img-responsive pull-left">Beautiful 
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div><!-- content container -->
         </div><!-- HairDesign page -->
 
@@ -447,6 +526,59 @@
                    </div>
             </div>
             </div>
+             <div class="row">
+             <div class="col-sm-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/7aLcZvuoXlk" frameborder="0" allowfullscreen></iframe>                
+                     </div>
+              </div>
+              <div>
+<div class="alignleft">  
+<script type='text/javascript'>
+ amzn_assoc_ad_type = 'banner';
+ amzn_assoc_tracking_id = 'audacaccom-20';
+ amzn_assoc_marketplace = 'amazon';
+ amzn_assoc_region = 'US';
+ amzn_assoc_placement = 'assoc_banner_placement_default';
+ amzn_assoc_linkid = 'V3XRJ7EPRVOSXTME';
+ amzn_assoc_campaigns = 'bfdwtvvide';
+ amzn_assoc_p = '14';
+ amzn_assoc_banner_type = 'category';
+ amzn_assoc_isresponsive = 'false';
+ amzn_assoc_banner_id = '03TA9F0PZ1AQXFJX7YR2';
+ amzn_assoc_width = '160';
+ amzn_assoc_height = '600';
+</script>
+</div>
+<div class="alignleft">  
+<script type='text/javascript'>
+ amzn_assoc_ad_type = 'banner';
+ amzn_assoc_tracking_id = 'audacaccom-20';
+ amzn_assoc_marketplace = 'amazon';
+ amzn_assoc_region = 'US';
+ amzn_assoc_placement = 'assoc_banner_placement_default';
+ amzn_assoc_linkid = 'SQ423TRXRF3MEUTT';
+ amzn_assoc_campaigns = 'cbflighting';
+ amzn_assoc_p = '14';
+ amzn_assoc_banner_type = 'category';
+ amzn_assoc_isresponsive = 'false';
+ amzn_assoc_banner_id = '1J3YC0B3DYPYFRZVAGG2';
+ amzn_assoc_width = '160';
+ amzn_assoc_height = '600';
+</script>
+<script src='//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1'></script>
+
+</div>
+             <div class="row">
+             <div class="col-sm-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-rYfomu37Kg" frameborder="0" allowfullscreen></iframe>
+         
+                     </div>
+              </div>
+
+            </div>
+
         </div><!-- content container -->
         </div><!-- services page -->
 
@@ -467,9 +599,8 @@
             </div>
         </div>
         </div> -->
-
-        <div class="page" id="contact">
-            <div class="container-fluid">
+<div class="page" id="contact"> 
+  <div class="container-fluid">
                             
 <div id="navcontainer">
 <ul>
@@ -483,27 +614,18 @@
 
 </div>
 </div>
-
-                     
-
-
- 
 <!--<div>
 <a data-pin-do="buttonBookmark" data-pin-tall="true" data-pin-color="red" href="https://www.pinterest.com/pin/create/button/"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" /></a>-->
 <!-- Please call pinit.js only once per page -->
 <!-- <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </div> -->
-
-                          
-
-    
             </div>
                 <div class="row">
                     <h2>Contact Us</h2>
                     <form role="form" action="MAILTO:bvaughan64@gmail.com" method="post" enctype="text/plain">
                         <fieldset>
                           <legend>Have a question or comment? </legend>
-                          <legend>I would like to here from you :)</legend>
+                          <legend>I would like to hear from you :)</legend>
                           <div class="form-group">
                             <label>Your name</label>
                             <input type="text" name="name">
@@ -518,7 +640,7 @@
           </div>  
         </div>
         <div class="row">
-                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                     <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <!-- audacious -->
                     <ins class="adsbygoogle"
                     style="display:block"
@@ -535,5 +657,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script src="js/myscript.js"></script>
         </div>
+        <script>
+             gaTrack("/", "main");
+        </script>
         </body>
 </html>
